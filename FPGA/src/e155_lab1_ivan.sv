@@ -17,7 +17,7 @@ module e155_lab1_ivan(	input logic 	reset,
     logic led_state; 
 
 	// HSOSC 
-	HSOSC #(.CLKHF_DIV(2'b01)) 		// divide it down to 24MHz
+	HSOSC #(.CLKHF_DIV("0b01")) 		// divide it down to 24MHz
 		hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
   
     // use counter module to achieve 2.4Hz blink rate from 48MHz clock
