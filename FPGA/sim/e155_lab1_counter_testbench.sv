@@ -6,9 +6,9 @@
 `timescale 1ns/1ps
 
 module e155_lab1_counter_testbench();
-    logic clk, 
-    logic reset, 
-    logic enable, 
+    logic clk;
+    logic reset; 
+    logic enable; 
     logic led_state;
 
     e155_lab1_counter_ivan dut(.clk(clk), .reset(reset), .enable(enable), .led_state(led_state));
